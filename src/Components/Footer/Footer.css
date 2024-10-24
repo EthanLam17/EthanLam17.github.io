@@ -1,0 +1,45 @@
+.Footer {
+  /* width: 100%; */
+  /* height: 20%; */
+  /* border: 1px solid red; */
+  height: 5rem;
+  display: flex;
+  width: 100%;
+}
+
+.Footer > .identity {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-left: 10%;
+}
+
+.Footer .copyright {
+  display: flex;
+
+}
+
+.Footer > .links {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.Footer .icons {
+  /* height: 15rem;
+  width: 15rem; */
+
+}
+
+.Footer .icons > i {
+  text-decoration: none;
+  /* font-size: 5rem; */
+  font-size: 7vh;
+  color: white;
+}
+
+.Footer .icons > i:hover {
+  color: #cd1577;
+}

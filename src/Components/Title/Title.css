@@ -1,0 +1,18 @@
+
+
+.current-title {
+  opacity: 0;
+}
+
+
+.current-title.fade-in {
+  transform: translateY(0);
+  opacity: 1;
+  transition: opacity 2s ease-in-out;
+}
+
+.current-title.fade-out {
+  transform: translateY(-50px);
+  opacity: 0;
+  transition: opacity .5s ease-in-out, transform .5s ease-out;
+}
