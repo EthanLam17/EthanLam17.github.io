@@ -67,7 +67,7 @@ function App() {
                 title: "Challenge Data Lakehouse",
                 technologies: "",
                 source: two,               
-                description: ""
+                description: "Human Resource Information Systems (HRIS), Enterprise Resource Planning (ERP), Ticketing Systems and Applicant Tracking Systems. Stakeholders across every department within Challenge Manufacturing was consuming more and more data everyday. What were the chances that different teams were pulling the same information from these core systems? High."
               },
               {
                 title: "Challenge Fleet Management",

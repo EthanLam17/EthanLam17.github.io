@@ -59,7 +59,7 @@ const Carousel = ({ sourceArray }) => {
             <div className={`carousel-item-description
               ${visibleDescription === idx ? 'display': ''}
             `}>
-              description
+              {item.description}
             </div>
             <img src={item.source}/>
 
