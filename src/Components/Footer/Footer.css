@@ -5,6 +5,7 @@
   height: clamp(3rem, 10vh, 7rem);
   display: flex;
   width: 100%;
+  margin: 10% 0 2%;
 }
 
 .Footer > .identity {
@@ -13,13 +14,16 @@
   flex-direction: column;
   justify-content: space-around;
   padding-left: 10%;
+  color: #995C90;
 }
 
 .Footer .copyright {
   display: flex;
-
 }
 
+.Footer .copyright > i {
+  margin-right: .3rem;
+}
 .Footer > .links {
   height: 100%;
   width: 50%;

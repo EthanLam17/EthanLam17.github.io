@@ -9,7 +9,8 @@
   height: 100%;
   background-color: #272b41;
   background-color: #181c34;
-  background-color: #718E78;
+  background-color: #2A3446;
+  /* background-color: #718E78; */
   /* background-color: #fff; */
   
 
@@ -20,19 +21,16 @@
   /* justify-content: space-evenly; */
 }
 
-.header {
+/* .header {
   color: #666;
-  /* background-color: #F3E9C9; */
   background-color: #768789;
   font-family: "EB Garamond", serif;
   color: white;
   font-size: 2rem;
-  /* height: 5rem; */
-  /* padding: 1%; */
   display: flex;
   width: 100%;
 
-}
+} */
 
 .name {
   /* width: 10%; */
@@ -87,6 +85,3 @@
 }
 
 
-.projects {
-  padding: 5% 0;
-}

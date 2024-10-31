@@ -43,6 +43,7 @@ const Carousel = ({ sourceArray }) => {
 
   return (
     <div className="Carousel">
+      <div className='header'>My Work</div>
       <div 
       className='carousel-inner'
       style= {{ transform: `translateX(calc(-${main * 50}vw + 50vw - 25vw))` }}

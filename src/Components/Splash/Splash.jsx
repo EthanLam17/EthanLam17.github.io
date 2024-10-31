@@ -8,11 +8,15 @@ import downicon from '../../assets/down icon.png'
 const Splash = () => {
 
   const handleScroll = () => {
+    const remainingScroll = window.innerHeight - window.scrollY
+
     window.scrollBy({
-      top: window.innerHeight,
+      top: remainingScroll,
       behavior: 'smooth'
     })
   }
+
+  
 
   return (
     <div className='Splash'>
@@ -28,9 +32,12 @@ const Splash = () => {
       </div>
 
       <div className='entice' onClick={handleScroll}>
+      <i className="fa-solid fa-chevron-down"></i>
+      <i className="fa-solid fa-chevron-down"></i>
+      <i className="fa-solid fa-chevron-down"></i>
+        {/* <img src={downicon} alt="Headshot portrait of Ethan Lam"/>
         <img src={downicon} alt="Headshot portrait of Ethan Lam"/>
-        <img src={downicon} alt="Headshot portrait of Ethan Lam"/>
-        <img src={downicon} alt="Headshot portrait of Ethan Lam"/>
+        <img src={downicon} alt="Headshot portrait of Ethan Lam"/> */}
 
       </div>
     </div>
