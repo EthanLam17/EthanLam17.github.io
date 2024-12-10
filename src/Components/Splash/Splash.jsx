@@ -8,6 +8,8 @@ import downicon from '../../assets/down icon.png'
 const Splash = () => {
 
   const handleScroll = () => {
+    console.log(window.innerHeight)
+    console.log(window.scrollY)
     const remainingScroll = window.innerHeight - window.scrollY
 
     window.scrollBy({

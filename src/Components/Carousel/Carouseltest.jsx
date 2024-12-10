@@ -1,12 +1,32 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 import './Carousel.css';
 
-const Carousel = ({ sourceArray, sources }) => {
+const Carouseltest = ({ sourceArray }) => {
 
   const [main, setMain] = useState(0);
   const [visibleDescription, setVisibleDescription] = useState(null)
-  const [inView, setInView] = useState(0)
+
+  const [display, setDisplay] = useState(0)
+  const [fadeIn, setFadeIn] = useState(false)
+
+
+  useEffect(() => {
+    setFadeIn(true)
+    const timer = setInterval(() => {
+      setFadeIn(false)
+      setTimeout(() => {
+        setDisplay((prevDisplay) => {
+          const nextDisplay = prevDisplay + 1
+          return nextDisplay % sourceArray[main].source.length
+          // return nextDisplay < sourceArray[main].source.length ? nextDisplay : 0
+        })
+        setFadeIn(true)
+      }, 600)
+    }, 3500)
+
+    return () => clearInterval(timer)
+  }, [main])
 
   const handleNext = () => {
     if (main !== sourceArray.length - 1) {
@@ -47,8 +67,7 @@ const Carousel = ({ sourceArray, sources }) => {
       <div className='header'>My Work</div>
       <div 
       className='carousel-inner'
-      style= {{ transform: `translateX(calc(-${main * 50}vw + 17.5vw))` }}
-      // style= {{ transform: `translateX(calc(-${main * 50}vw + 50vw - 25vw))` }} // correct formula for 100 width
+      style= {{ transform: `translateX(calc(-${main * 50}vw + 50vw - 25vw))` }}
       >
         {sourceArray.map((item, idx) => (
           <div className={`carousel-item 
@@ -62,15 +81,9 @@ const Carousel = ({ sourceArray, sources }) => {
             <div className={`carousel-item-description
               ${visibleDescription === idx ? 'display': ''}
             `}>
-              {item.description.split('\n').map((line, index) => (
-                <div key={index}>
-                  <br/>
-                  {line}
-                </div>
-              ))}
-              {/* {item.description} */}
+              {item.description}
             </div>
-            <img src={item.source}/>
+            <img className={`${fadeIn ? 'fade-in' : ''}`} src={item.source[display]}/>
 
           </div>
         ))}
@@ -85,4 +98,4 @@ const Carousel = ({ sourceArray, sources }) => {
   );
 };
 
-export default Carousel;
+export default Carouseltest;

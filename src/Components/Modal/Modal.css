@@ -1,0 +1,99 @@
+
+
+
+.Modal {
+  /* border: 1px solid red; */
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  z-index: 10;
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "EB Garamond", serif;
+  
+}
+.Modal textarea, .Modal input{
+  font-family: "EB Garamond", serif;
+
+
+}
+
+.Modal .form-container {
+  border: 1px solid grey;
+  height: 60%;
+  width: 25%;
+  margin-left: 15%;
+  background-color: #1d2431;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.Modal .form-header {
+  height: 10%;
+  width: 80%;
+  padding: 5% 10%;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 2rem;
+}
+
+.Modal .form-header button {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 3rem;
+  border: none;
+}
+
+.Modal .form-header button:hover {
+  cursor: pointer;
+  color: white;
+  background-color: #995C90;
+  
+}
+
+.Modal form {
+  height: 80%;
+  width: 80%;
+  padding: 0 10%;
+  
+}
+
+.Modal .form-questions {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 80%;
+}
+
+
+.Modal .form-input {
+  width: 70%;
+  font-size: 1.3rem;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  padding: 5px;
+}
+
+.Modal .form-submit {
+  height: 20%;
+  display: flex;
+  align-items: center;
+}
+
+.Modal .form-submit > input{
+  font-size: 1.5rem;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+}
+.Modal .form-submit > input:hover {
+  cursor: pointer;
+  color: white;
+  background-color: #995C90;
+}

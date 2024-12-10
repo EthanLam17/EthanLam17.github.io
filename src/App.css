@@ -3,34 +3,25 @@
   /* width: 100vw; */
 }
 
+.eb-garamond-font {
+  font-family: "EB Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+}
+
 
 #portfolio {
-  /* background-color: #FFF; */
   height: 100%;
   background-color: #272b41;
   background-color: #181c34;
   background-color: #2A3446;
-  /* background-color: #718E78; */
-  /* background-color: #fff; */
-  
-
-  /* width: 100%; */
   color: #a6c4ea;
   display: flex;
-  flex-direction: column;
-  /* justify-content: space-evenly; */
+  position: relative;
 }
 
-/* .header {
-  color: #666;
-  background-color: #768789;
-  font-family: "EB Garamond", serif;
-  color: white;
-  font-size: 2rem;
-  display: flex;
-  width: 100%;
 
-} */
 
 .name {
   /* width: 10%; */
@@ -52,36 +43,24 @@
   color: #000;
   font-size: 2rem;
   height: 100%;
+  width: 85%;
+  margin-left: 15%;
 }
 
-.section {
-  /* background-color: #a6c4ea; */
-  /* margin: 0 10%; */
-  /* border-radius: 15px; */
-  /* padding: 1%; */
-  /* border-bottom: 1px solid #a6c4ea */
-}
 
 .values {
-  display: flex;
-  /* background-color:#F3E9C9; */
-  /* padding: 5% 15%; */
-  /* width: 100%; */
-  /* border: 1px solid red; */
+
 }
 
 .experience {
   background-color: #af9483;
   background-color: #768789;
-  /* background-color: #c5e5dd; */
   
 }
 
 .skills {
   background-color: #689792;
   background-color: #BFD8C4;
-  /* background-color: #768789; */
-  /* background-color: #50af97; */
 }
 
 
