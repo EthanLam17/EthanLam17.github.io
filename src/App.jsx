@@ -73,6 +73,12 @@ function App() {
                 description: "what is it: Challenge Connect is Challenge Mfg's customized intranet web page.\nhow does it help: Challenge Connect provides a centralized location to important applications, resources, documents, and company wide events."
               },
               {
+                title: "Wheelhouse Airbnb Extension",
+                technologies: "",
+                source: connect,            
+                description: "Summary about Wheelhouse Airbnb Extension"
+              },
+              {
                 title: "Challenge Data Lakehouse",
                 technologies: "",
                 source: datalake,               
@@ -82,7 +88,7 @@ function App() {
                 title: "Challenge Fleet Management",
                 technologies: "",
                 source: fleet,
-                description: "what is it: The Fleet Management application modernizes the vehicle check-out process, replacing outdated paper methods with an organized web platform. \nhow does it help: Featuring Microsoft Single Sign-On, it enables corporate employees to reserve vehicles seamlessly, report issues to management, and maintain efficient oversight"
+                description: "what is it: The Fleet Management application modernizes the vehicle check-out process, replacing outdated paper methods with an organized web platform. \nhow does it help: Featuring Microsoft Single Sign-On, it enables corporate employees to reserve ve hicles seamlessly, report issues to management, and maintain efficient oversight"
               },
               {
                 title: "Challenge University",
